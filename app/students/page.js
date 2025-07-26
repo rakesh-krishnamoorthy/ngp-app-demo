@@ -8,29 +8,8 @@ export default function StudentsPage() {
         { name: "Student 2", linkedin: "https://linkedin.com/in/student2" },
         { name: "Student 3", linkedin: "https://linkedin.com/in/student3" },
         { name: "Student 4", linkedin: "https://linkedin.com/in/student4" },
-        { name: "Student 5", linkedin: "https://linkedin.com/in/student5" },
-        { name: "Student 6", linkedin: "https://linkedin.com/in/student6" },
-        { name: "Student 7", linkedin: "https://linkedin.com/in/student7" },
-        { name: "Student 8", linkedin: "https://linkedin.com/in/student8" },
-        { name: "Student 9", linkedin: "https://linkedin.com/in/student9" },
-        { name: "Student 10", linkedin: "https://linkedin.com/in/student10" },
       ],
-    },
-    {
-      teamName: "Team 2",
-      members: [
-        { name: "Student 1", linkedin: "https://linkedin.com/in/student1" },
-        { name: "Student 2", linkedin: "https://linkedin.com/in/student2" },
-        { name: "Student 3", linkedin: "https://linkedin.com/in/student3" },
-        { name: "Student 4", linkedin: "https://linkedin.com/in/student4" },
-        { name: "Student 5", linkedin: "https://linkedin.com/in/student5" },
-        { name: "Student 6", linkedin: "https://linkedin.com/in/student6" },
-        { name: "Student 7", linkedin: "https://linkedin.com/in/student7" },
-        { name: "Student 8", linkedin: "https://linkedin.com/in/student8" },
-        { name: "Student 9", linkedin: "https://linkedin.com/in/student9" },
-        { name: "Student 10", linkedin: "https://linkedin.com/in/student10" },
-      ],
-    },
+    }
   ];
 
   return (
