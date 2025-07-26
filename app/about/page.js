@@ -5,6 +5,9 @@ export default function AboutPage() {
       <p className="text-lg text-gray-700">
         We are demonstrating CI/CD pipelines using Next.js, Docker, and AWS for students at NGP College.
       </p>
+      <p>
+        we added features on about page...
+      </p>
     </div>
   )
 }
