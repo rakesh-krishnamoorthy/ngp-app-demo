@@ -8,6 +8,9 @@ export default function AboutPage() {
       <p>
         we added features on about page...
       </p>
+    <p>
+    some changess..
+    </p>
     </div>
   )
 }
