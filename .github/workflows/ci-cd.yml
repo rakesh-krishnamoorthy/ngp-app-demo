@@ -1,4 +1,4 @@
-name: CI/CD - Next.js NGP App
+name: Simple CI/CD Demo
 
 on:
   push:
@@ -6,11 +6,11 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  ci-demo:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repo
+      # Step 1: Checkout code
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -20,29 +20,17 @@ jobs:
         with:
           node-version: 18
 
-      # Step 3: Install dependencies and build
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      # Step 4: Build Next.js app
+      - name: Build app
         run: npm run build
 
-      # Step 4: Log in to Docker Hub
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_HUB_USER }}
-          password: ${{ secrets.DOCKER_HUB_TOKEN }}
-
-      # Step 5: Build & push Docker image
-      - name: Build and push Docker image
+      # Step 5: Simulate deploy
+      - name: Fake deploy step
         run: |
-          docker build -t ${{ secrets.DOCKER_HUB_USER }}/ngp-app:latest .
-          docker push ${{ secrets.DOCKER_HUB_USER }}/ngp-app:latest
-
-      # Step 6: Deploy to EC2
-      - name: Deploy to EC2
-        env:
-          SERVER_IP: ${{ secrets.SERVER_IP }}
-          DOCKER_HUB_USER: ${{ secrets.DOCKER_HUB_USER }}
-        run: bash deploy.sh
+          echo "Deploying app..."
+          sleep 2
+          echo "Deployment successful 🎉"
